@@ -1,0 +1,13 @@
+id: documentation-lookup
+kind: skill
+title: Documentation Lookup
+summary: Use current library and framework documentation through Context7 when available.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.agents/skills/documentation-lookup
+dependencies:
+  - context7
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.
+  - Requires Context7 MCP or an equivalent current-docs source to be fully effective.

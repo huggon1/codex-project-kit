@@ -1,0 +1,25 @@
+id: ecc-core-review-and-docs
+title: ECC Core Review And Docs
+summary: Conservative ECC starter pack for exploration, review, documentation verification, and current-doc lookup.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code
+validated: false
+includes:
+  - kind: mcp
+    id: context7
+  - kind: agent
+    id: explorer
+  - kind: agent
+    id: reviewer
+  - kind: agent
+    id: docs-researcher
+  - kind: skill
+    id: documentation-lookup
+  - kind: config
+    id: ecc-core-agents
+warnings:
+  - This pack is imported into the external layer and is not yet validated.
+dependencies: []
+notes:
+  - Use this pack as a safe starting point before promoting any item to validated.

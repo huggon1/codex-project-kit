@@ -1,0 +1,11 @@
+id: reviewer
+kind: agent
+title: Reviewer
+summary: Read-only reviewer focused on correctness, security, regressions, and missing tests.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/agents/reviewer.toml
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.

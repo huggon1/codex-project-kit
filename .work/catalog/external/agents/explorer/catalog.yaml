@@ -1,0 +1,11 @@
+id: explorer
+kind: agent
+title: Explorer
+summary: Read-only codebase explorer for gathering evidence before changes are proposed.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/agents/explorer.toml
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.

@@ -1,0 +1,12 @@
+id: github
+kind: mcp
+title: GitHub MCP
+summary: GitHub MCP server for repository, issue, and pull-request workflows.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/config.toml
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.
+  - Usually requires GitHub authentication in the local environment.

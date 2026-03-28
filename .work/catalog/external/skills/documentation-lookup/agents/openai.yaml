@@ -1,0 +1,4 @@
+interface:
+  display_name: "Documentation Lookup"
+  short_description: "Use current framework and library docs through Context7 when available"
+  default_prompt: "Use current framework or library documentation to answer accurately. Prefer Context7 when it is configured, choose the right library source, and cite version-specific behavior when it matters."

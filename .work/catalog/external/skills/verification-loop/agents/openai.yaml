@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verification Loop"
+  short_description: "Run a structured build, type, lint, test, and security verification pass"
+  default_prompt: "Run a structured verification pass for this project. Use the project's real commands where available, keep the report concise, and flag gaps when the project does not support a phase cleanly."

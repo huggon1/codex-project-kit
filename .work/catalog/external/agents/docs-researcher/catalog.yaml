@@ -1,0 +1,11 @@
+id: docs-researcher
+kind: agent
+title: Docs Researcher
+summary: Read-only agent for verifying API behavior and claims against primary documentation.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/agents/docs-researcher.toml
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.

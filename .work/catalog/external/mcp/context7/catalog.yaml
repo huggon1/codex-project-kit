@@ -1,0 +1,12 @@
+id: context7
+kind: mcp
+title: Context7 MCP
+summary: Current framework and library documentation server used by documentation-lookup.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/config.toml
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.
+  - Useful as the primary docs source for documentation-lookup.

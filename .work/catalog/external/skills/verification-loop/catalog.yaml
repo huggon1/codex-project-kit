@@ -1,0 +1,13 @@
+id: verification-loop
+kind: skill
+title: Verification Loop
+summary: Structured post-change verification covering build, types, lint, tests, security, and diff review.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.agents/skills/verification-loop
+dependencies: []
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.
+  - Needs project-specific command alignment before it is broadly reusable.
+  - Still contains Claude-oriented wording and should usually be promoted only after adaptation.

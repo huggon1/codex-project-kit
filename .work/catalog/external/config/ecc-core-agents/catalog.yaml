@@ -1,0 +1,15 @@
+id: ecc-core-agents
+kind: config
+title: ECC Core Agents Registration
+summary: Registers the explorer, reviewer, and docs-researcher subagents in `.codex/config.toml`.
+layer: external
+origin: everything-claude-code
+source_ref: resource/everything-claude-code/.codex/config.toml
+dependencies:
+  - explorer
+  - reviewer
+  - docs-researcher
+validated: false
+notes:
+  - Imported from ECC as an unvalidated external candidate.
+  - Intended for managed-block installation into `.codex/config.toml`.

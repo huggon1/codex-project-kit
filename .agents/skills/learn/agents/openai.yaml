@@ -1,0 +1,6 @@
+interface:
+  display_name: "Learn"
+  short_description: "Capture a learned skill or a human improvement item"
+  default_prompt: "Review the recent work, decide whether the best outcome is a learned skill, a human improvement item, both, or drop, preview the result, and write only after confirmation."
+policy:
+  allow_implicit_invocation: false

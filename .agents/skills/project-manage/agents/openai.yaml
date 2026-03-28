@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Manage"
+  short_description: "Manage the current project's runtime layer and catalog"
+  default_prompt: "Manage the current project root: inspect the active Codex runtime layer and layered catalog, collect any missing details, preview the intended changes, then apply only the necessary updates after confirmation."
+policy:
+  allow_implicit_invocation: false
