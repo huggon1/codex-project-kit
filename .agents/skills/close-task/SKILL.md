@@ -5,7 +5,7 @@ description: Use when the user wants to stop work on a task for the current work
 
 # Close Task
 
-Treat the current repository root as the current workstream execution directory.
+You are running inside a workstream execution directory.
 
 ## Purpose
 
@@ -34,7 +34,7 @@ This skill may also do a light review against existing shared human-learning ite
 - mark a task as done
 - mark a task as dropped
 
-## Out Of Scope
+## Out of Scope
 
 Do not use this skill to:
 
@@ -81,7 +81,7 @@ Do not use this skill to:
      - `done` when the task is complete
      - `dropped` when the task is intentionally abandoned
      - `planned` only when the task is being parked before active work resumes
-5. If shared `.work/learning/human/` exists:
+5. If shared `.work/learning/human/` contains active items:
    - prefer `.agents/skills/_shared/scripts/human_learning.py list --status active` when `python3` is available
    - inspect only `status: active` items
    - consider only items clearly relevant to the task that is being closed

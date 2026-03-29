@@ -40,6 +40,11 @@ if [[ -z "${workstream_id}" || "${workstream_id}" == "${target_path}" || "${work
   exit 2
 fi
 
+if [[ ! "${workstream_id}" =~ ^[a-z0-9][a-z0-9_-]*$ ]]; then
+  echo "xcode: invalid workstream id '${workstream_id}': use only lowercase letters, digits, hyphens, and underscores." >&2
+  exit 2
+fi
+
 if [[ ! -d "${root_dir}/${target_path}" ]]; then
   echo "xcode: workstream execution directory not found: ${target_path}" >&2
   exit 1
@@ -52,7 +57,7 @@ if [[ ! -f "${metadata_path}" ]]; then
   exit 1
 fi
 
-workstream_type="$(grep -E '^type = ' "${metadata_path}" | head -n 1 | sed -E 's/^type = "(.*)"$/\1/')"
+workstream_type="$(grep -m1 -E '^\s*type\s*=' "${metadata_path}" | sed -E "s/^[[:space:]]*type[[:space:]]*=[[:space:]]*[\"']([^\"']*)[\"'].*/\1/")"
 
 if [[ -z "${workstream_type}" ]]; then
   echo "xcode: could not determine workstream type from: ${metadata_path}" >&2

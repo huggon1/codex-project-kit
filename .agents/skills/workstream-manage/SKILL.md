@@ -50,7 +50,7 @@ This skill is root-only. Do not use it from inside `workstreams/<workstream-id>/
 - `install` / `remove` / `promote`
 - `import local source into external`
 
-## Out Of Scope
+## Out of Scope
 
 Do not use this skill to:
 
@@ -158,6 +158,7 @@ After a bootstrap or repair run, these should exist at the shared root:
      - `.agents/skills/`
      - `.codex/`
    - expose shared skills into the workstream through local discoverable entries
+   - make shared helper scripts accessible from the workstream at `.agents/skills/_shared/scripts/` (for example via symlink to the shared root)
    - provision workstream-local ignore rules so the private runtime shell stays local by default:
      - `/AGENTS.md`
      - `/.agents/`

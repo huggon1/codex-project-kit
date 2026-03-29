@@ -261,7 +261,7 @@ def command_list(args: argparse.Namespace) -> None:
 
 
 def command_learning_candidates(args: argparse.Namespace) -> None:
-    root = Path(args.root or ".work/workstreams")
+    root = Path(args.root) if args.root else resolve_shared_root_relative(TASK_DIR)
     items: list[dict[str, Any]] = []
     for path in all_workstream_task_files(root):
         summary = record_summary(path)

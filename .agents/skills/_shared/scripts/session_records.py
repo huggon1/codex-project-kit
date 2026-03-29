@@ -71,7 +71,7 @@ def resolve_session_file(session_id: str, root: Path) -> Path | None:
     if not session_id:
         return None
     for path in iter_session_files(root):
-        if session_id in path.name:
+        if path.stem == session_id:
             return path
     return None
 

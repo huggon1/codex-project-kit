@@ -1,3 +1,4 @@
+---
 name: learn
 description: Use only when the user explicitly asks to capture a lesson, extract a reusable pattern, save a learning, reflect on how to improve, or turn recent work into a learned skill, a human improvement item, or a workstream rule candidate.
 ---
@@ -43,7 +44,7 @@ Use this skill only when the user explicitly asks to learn, capture a lesson, sa
 - save a workstream-rule candidate
 - save multiple outputs when multiple outputs are genuinely useful
 
-## Out Of Scope
+## Out of Scope
 
 Do not use this skill to:
 

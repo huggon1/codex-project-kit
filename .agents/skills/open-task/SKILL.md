@@ -1,11 +1,11 @@
 ---
 name: open-task
-description: Use when the user wants to start or resume a task for the current workstream execution directory. Trigger on requests like open task, start task, continue task, resume task, start session, or resume session.
+description: Use when the user wants to start or resume a task for the current workstream execution directory. Trigger on requests like open task, start task, continue task, resume task, start work on a task, or resume work on a task.
 ---
 
 # Open Task
 
-Treat the current repository root as the current workstream execution directory.
+You are running inside a workstream execution directory.
 
 ## Purpose
 
@@ -35,7 +35,7 @@ Open the right task record for work, either by creating a new task file or by re
 - resume an existing task for the current workstream
 - turn rough notes or explicit staged material into a task record for the current workstream
 
-## Out Of Scope
+## Out of Scope
 
 Do not use this skill to:
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from collections.abc import Iterable, Mapping
 from datetime import datetime
 from pathlib import Path
@@ -51,6 +52,22 @@ def current_codex_session_id() -> str:
     return os.environ.get("CODEX_THREAD_ID", "").strip()
 
 
+WORKSTREAM_ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
+
+
+def validate_workstream_id(workstream_id: str) -> str:
+    """Validate format of a workstream ID. Raises ValueError if invalid."""
+    if not workstream_id:
+        raise ValueError("Workstream ID must not be empty.")
+    if not WORKSTREAM_ID_RE.match(workstream_id):
+        raise ValueError(
+            f"Invalid workstream ID: {workstream_id!r}. "
+            "Use only lowercase letters, digits, hyphens, and underscores. "
+            "Must start with a letter or digit."
+        )
+    return workstream_id
+
+
 def find_workstream_context(start: str | Path = ".") -> dict[str, str]:
     start_path = Path(start).resolve()
 
@@ -88,6 +105,7 @@ def resolve_shared_root_relative(path: str | Path, start: str | Path = ".") -> P
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     if not text.startswith(f"{FRONTMATTER_BOUNDARY}\n"):
         if text.startswith("---\n"):
             raise ValueError("YAML frontmatter is not supported by these helpers. Migrate the file to TOML frontmatter first.")
@@ -139,9 +157,15 @@ def dump_toml_table(data: Mapping[str, object], key_order: Iterable[str]) -> str
 
 
 def toml_value(value: object) -> str:
+    if value is None:
+        return '""'
     if isinstance(value, bool):
         return "true" if value else "false"
     if isinstance(value, int):
+        return str(value)
+    if isinstance(value, float):
+        if value == int(value):
+            return str(int(value))
         return str(value)
     if isinstance(value, str):
         escaped = value.replace("\\", "\\\\").replace('"', '\\"')

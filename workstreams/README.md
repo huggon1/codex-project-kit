@@ -23,7 +23,7 @@ workstreams/
 - Keep long-lived shared records outside this directory, under the shared root layer.
 - Each workstream execution directory should expose a local runtime shell for Codex:
   - `AGENTS.md`
-  - `.agents/skills/`
+  - `.agents/skills/` including access to `_shared/scripts/` from the shared root
   - `.codex/`
 - Do not create a workstream-local `.tmp/`; staged input stays at the shared root.
 - Shared skills should be exposed here through local discoverable entries.
