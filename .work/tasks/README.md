@@ -88,5 +88,5 @@ The rest of the body stays model-authored unless the user asks otherwise.
 
 - Use `$open-task` to create or resume task files.
 - Use `$close-task` to update task outcome and closure state.
-- Use [.agents/skills/_shared/scripts/task_records.py](/home/duu/code/mycodex/workspace/.agents/skills/_shared/scripts/task_records.py) behind those skills when structured reads or precise partial writes are needed.
+- Use [.agents/skills/_shared/scripts/task_records.py](../../.agents/skills/_shared/scripts/task_records.py) behind those skills when structured reads or precise partial writes are needed.
 - Do not duplicate active tasks when a matching active task already exists.

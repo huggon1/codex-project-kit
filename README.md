@@ -2,7 +2,7 @@
 
 This repository is a private-first, single-project Codex root template.
 
-The matching model-facing rules live in [AGENTS.md](/home/duu/code/mycodex/workspace/AGENTS.md).
+The matching model-facing rules live in [AGENTS.md](AGENTS.md).
 
 ## Quick Use
 
@@ -65,7 +65,7 @@ The main difference is style:
 
 This repository tracks the baseline itself because it is the source template.
 
-In a real project checkout that uses this structure, the same paths should usually stay local-only. Use [project-local-exclude.example](/home/duu/code/mycodex/workspace/project-local-exclude.example) as the source for `.git/info/exclude` in the real project checkout instead of modifying the team repo's tracked `.gitignore`.
+In a real project checkout that uses this structure, the same paths should usually stay local-only. Use [project-local-exclude.example](project-local-exclude.example) as the source for `.git/info/exclude` in the real project checkout instead of modifying the team repo's tracked `.gitignore`.
 
 ## Design Notes
 

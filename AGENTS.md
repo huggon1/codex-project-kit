@@ -35,12 +35,12 @@
 ## Read Order
 
 - Start here for root-level behavior.
-- For task-file structure and rules, read [.work/tasks/README.md](/home/duu/code/mycodex/workspace/.work/tasks/README.md).
-- For catalog structure and runtime materialization rules, read [.work/catalog/README.md](/home/duu/code/mycodex/workspace/.work/catalog/README.md).
-- For project runtime state rules, read [.work/project-manage/README.md](/home/duu/code/mycodex/workspace/.work/project-manage/README.md).
-- For human-learning item rules, read [.work/human-learning/README.md](/home/duu/code/mycodex/workspace/.work/human-learning/README.md).
-- For shared helper scripts and fallback behavior, read [.agents/skills/_shared/README.md](/home/duu/code/mycodex/workspace/.agents/skills/_shared/README.md).
-- For staged input behavior, read [.tmp/README.md](/home/duu/code/mycodex/workspace/.tmp/README.md).
+- For task-file structure and rules, read [.work/tasks/README.md](.work/tasks/README.md).
+- For catalog structure and runtime materialization rules, read [.work/catalog/README.md](.work/catalog/README.md).
+- For project runtime state rules, read [.work/project-manage/README.md](.work/project-manage/README.md).
+- For human-learning item rules, read [.work/human-learning/README.md](.work/human-learning/README.md).
+- For shared helper scripts and fallback behavior, read [.agents/skills/_shared/README.md](.agents/skills/_shared/README.md).
+- For staged input behavior, read [.tmp/README.md](.tmp/README.md).
 - Load deeper project files only when the current task actually needs them.
 
 ## High-Priority Rules

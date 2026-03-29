@@ -73,5 +73,5 @@ The internal helper layer may update these parts directly:
 
 - Use `$learn` to create or update human-learning items explicitly.
 - `$close-task` may update existing active items when they are clearly relevant.
-- Use [.agents/skills/_shared/scripts/human_learning.py](/home/duu/code/mycodex/workspace/.agents/skills/_shared/scripts/human_learning.py) behind those skills when structured reads or metadata-only updates are enough.
+- Use [.agents/skills/_shared/scripts/human_learning.py](../../.agents/skills/_shared/scripts/human_learning.py) behind those skills when structured reads or metadata-only updates are enough.
 - Human-learning items are private working material, not active runtime capabilities.
